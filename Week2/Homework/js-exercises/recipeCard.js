@@ -17,8 +17,12 @@ let rotiRecipe = {};
 
 // Log each property out separately, using a loop(for, while or do /while)
 
-for (let key in rotiRecipe) {
-  if (rotiRecipe.hasOwnProperty(key)) {
-    console.log(key + ": " + rotiRecipe[key]);
+for (let prop in rotiRecipe) {
+  if (rotiRecipe.hasOwnProperty(prop)) {
+    console.log(prop + ": " + rotiRecipe[prop]);
   }
 }
+
+//for (let prop in rotiRecipe) {
+//    console.log(prop, ":", rotiRecipe[prop]);
+//}
