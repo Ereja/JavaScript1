@@ -30,15 +30,11 @@ function gradeCalculator(grade) {
   } else if (grade >= 90 && grade <= 100) {
     letterGrade = "A";
   } else {
-    return console.log(
-      "You have entered an incorrect value. Please enter a number between 0 and 100"
-    );
+    return "You have entered an incorrect value. Please enter a number between 0 and 100";
   } //eror message if number is not 0-100
-  console.log("You got a " + letterGrade + " " + "(" + grade + "%" + ")" + "!");
+  return "You got a " + letterGrade + " " + "(" + grade + "%" + ")" + "!";
 }
-//we pass an argument to check if function is working
-gradeCalculator(10); // you got F
-gradeCalculator(53); // you got E
-gradeCalculator(60); // got got D
-gradeCalculator(588); // you have entered an incorrect value
-gradeCalculator(-10); // incorrect value
+
+//console log to  check if function is working
+console.log(gradeCalculator(60)); // got got D
+console.log(gradeCalculator(588)); //inccorect value message
