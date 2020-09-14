@@ -1,7 +1,6 @@
 "use strict";
 
 //Create a function that fulfills the following requirements:
-
 //Takes in 2 arguments
 //Check the data type of each
 //Compares each data type
@@ -12,16 +11,16 @@
 //Now compare the types of your different variables with one another
 //Log Not the same...when the types are different
 
-let personX = "Chandler Bing"; //string
-let personY = "Regina Phalange"; //string
-let redChair = {"type": "chair"}; // object
-let blueCarpet = {"type": "carpet"}; // object
+let personX = "Chandler Bing";
+let personY = "Regina Phalange";
+let redChair = { type: "chair" };
+let blueCarpet = { type: "carpet" };
 
 //checking data type
-console.log(typeof personX);
-console.log(typeof personY);
-console.log(typeof redChair);
-console.log(typeof blueCarpet);
+console.log(typeof personX); //string
+console.log(typeof personY); //string
+console.log(typeof redChair); // object
+console.log(typeof blueCarpet); // object
 
 //comparing if data types are the same
 console.log(typeof personX === typeof personY); //true
@@ -31,17 +30,20 @@ console.log(typeof personY === typeof redChair); //false
 console.log(typeof personY === typeof blueCarpet); //false
 console.log(typeof redChair === typeof blueCarpet); //true
 
-//using if statement
-if (typeof personX === typeof personY) {
+//function using if statement to compare data types
+
+function typeChecker(a, b) {
+  if (typeof a === typeof b) {
     console.log("SAME TYPE");
-}
-if (typeof personY === typeof blueCarpet) {
-    console.log("SAME TYPE");
-} else {
+  } else {
     console.log("NOT THE SAME");
+  }
 }
 
-
-
-
-
+//calling the function
+typeChecker(personX, personY);
+typeChecker(personX, redChair);
+typeChecker(personX, blueCarpet);
+typeChecker(personY, redChair);
+typeChecker(personY, blueCarpet);
+typeChecker(redChair, blueCarpet);
