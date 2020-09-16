@@ -9,7 +9,7 @@ Write a console.log statement in which you log the value of the highest value.*/
 
 let z = 7.25;
 console.log(z);
-let a = 7;
+let a = Math.round(z);
 console.log(a);
 let max = Math.max(z, a);
 console.log(max);
