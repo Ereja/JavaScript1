@@ -4,7 +4,7 @@
 "use strict";
 
 let numberX;
-console.log("Value of numberX it`s not defined. It can be anything, but name suggests that we should assign it value of a number.");
+console.log("Value of numberX is undefined. It can be anything, but name suggests that we should assign it value of a number.");
 console.log(numberX); //undefined
 numberX = 9;
 console.log("Value of numberX now is 9");
