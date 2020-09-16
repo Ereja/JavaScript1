@@ -10,10 +10,12 @@ Write a console.log statement that logs the second array!*/
 
 let myArrays = [];
 console.log(
-  "The value of the array is empty, null. There is nothing in that array"
+  "The value of the array is undefined. There is nothing in that array"
 );
 console.log(myArrays);
 let myAnimals = ["Cats", "Dogs", "Parakeets"];
 console.log(myAnimals);
 myAnimals.push("Piglet");
 console.log(myAnimals);
+
+/*undefined vs null: null is empty ar not existing value and is always assigned on purpose. Meanwhile undefined is variable without value. You could also yourself set variable to be undefined (let example = undefined;*/
