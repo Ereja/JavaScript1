@@ -21,7 +21,7 @@ console.log(fruits.length); // prints out 4
 console.log(vegetables.length); // prints out 7
 
 //comparison statement
-if (fruits.length == vegetables.length) {
+if (fruits.length === vegetables.length) {
   console.log("THEY ARE THE SAME!");
 } else {
   console.log("TWO DIFFERENT SIZES!");
