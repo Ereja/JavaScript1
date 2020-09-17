@@ -5,6 +5,7 @@ Inside the function define a variable that holds an array, compliments, with 10 
 Write code that randomly selects a compliment
 Return a string: "You are [COMPLIMENT], [YOUR_NAME]!
 Call the function three times, giving each function call the same argument: your name.*/
+"use strict"
 
 function giveCompliment(yourName) {
     const compliment = [
