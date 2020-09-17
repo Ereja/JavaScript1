@@ -32,8 +32,12 @@ function gradeCalculator(grade) {
   } else {
     return "You have entered an incorrect value. Please enter a number between 0 and 100";
   } //eror message if number is not 0-100
-  return "You got a " + letterGrade + " " + "(" + grade + "%" + ")" + "!";
+  return `You got a ${letterGrade} ${grade}%!` 
 }
+
+//calling a function
+gradeCalculator(60);
+gradeCalculator(10);
 
 //console log to  check if function is working
 console.log(gradeCalculator(60)); // got got D
