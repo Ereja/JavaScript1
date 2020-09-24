@@ -11,7 +11,7 @@ Call the function 3 times, by passing the arrays as the argument.
 
 const numChildren = [0, 1, 2, 3, 4];
 const partnerName = ["Roy", "Maurice", "Douglas", "Jen", "Richmond"];
-const locations = ["Japas", "Bali", "The Netherlands", "Australia", "Canada"];
+const locations = ["Japan", "Bali", "The Netherlands", "Australia", "Canada"];
 const jobs = [
   "web developer",
   "teacher",
