@@ -28,17 +28,15 @@ for (let i = 0; i < booksList.length; i++) {
 
 //For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien"
 
-for (let prop of booksList) {
-  console.log(prop["Title"] + " by " + prop["Author"]);
+for (let book of booksList) {
+  console.log(book.Title + " by " + book.Author);
 }
-
 //Create a conditional statement to change the log depending on whether you read it yet or not.If you read it, log a string like You already read "The Hobbit" right after the log of the book detail
 //If you haven't read it log a string like You still need to read "The Lord of the Rings"
-
-for (let prop of booksList) {
-  if (prop.alreadyRead === true) {
-    console.log("You already read " + prop["Title"]);
+for (let book of booksList) {
+  if (book.alreadyRead === true) {
+    console.log("You already read " + book.Title);
   } else {
-    console.log("You still need to read " + prop["Title"]);
+    console.log("You still need to read " + book.Title);
   }
 }
