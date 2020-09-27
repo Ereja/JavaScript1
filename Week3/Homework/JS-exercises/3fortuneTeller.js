@@ -11,7 +11,7 @@ Call the function 3 times, by passing the arrays as the argument.
 
 const numChildren = [0, 1, 2, 3, 4];
 const partnerName = ["Roy", "Maurice", "Douglas", "Jen", "Richmond"];
-const locations = ["Japas", "Bali", "The Netherlands", "Australia", "Canada"];
+const locations = ["Japan", "Bali", "The Netherlands", "Australia", "Canada"];
 const jobs = [
   "web developer",
   "teacher",
@@ -20,7 +20,7 @@ const jobs = [
   "waitress",
 ];
 
-function tellFortune(numChildren, partnerName, locations, jobs) {
+function tellFortune() {
   const children = numChildren[Math.floor(Math.random() * numChildren.length)];
   const partner = partnerName[Math.floor(Math.random() * partnerName.length)];
   const location = locations[Math.floor(Math.random() * locations.length)];
@@ -30,13 +30,6 @@ function tellFortune(numChildren, partnerName, locations, jobs) {
 }
 
 //calling the function
-tellFortune(numChildren, partnerName, locations, jobs);
-tellFortune(numChildren, partnerName, locations, jobs);
-tellFortune(numChildren, partnerName, locations, jobs);
-
-//checking in the console
-console.log(tellFortune(numChildren, partnerName, locations, jobs));
-console.log(tellFortune(numChildren, partnerName, locations, jobs));
-console.log(tellFortune(numChildren, partnerName, locations, jobs));
-
-/*why call function and still use console.log? Call function invokes function with given argument. If you use this function in a browser we can see what function does after being called in a console. But if I check it in terminal using node, I get to see results only of console.log */
+tellFortune();
+tellFortune();
+tellFortune();

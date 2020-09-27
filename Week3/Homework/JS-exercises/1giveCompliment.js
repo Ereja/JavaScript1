@@ -29,6 +29,4 @@ giveCompliment("Vaida");
 giveCompliment("Vaida");
 giveCompliment("Vaida");
 
-//checking via console if function is working
-console.log(giveCompliment("Vaida"));
 

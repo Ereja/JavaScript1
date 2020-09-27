@@ -18,5 +18,3 @@ calculateDogAge(2);
 calculateDogAge(5.5);
 calculateDogAge(7);
 
-//console log to see if function is working
-console.log(calculateDogAge(2.5));

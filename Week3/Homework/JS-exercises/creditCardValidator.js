@@ -54,9 +54,3 @@ creditCardValidator("6666666666666661");
 creditCardValidator("6666666666661666");
 creditCardValidator("9999777788880000");
 
-console.log(creditCardValidator("4444444444444444"));
-console.log(creditCardValidator("a92332119c011112"));
-console.log(creditCardValidator("1111111111111110"));
-console.log(creditCardValidator("6666666666666661"));
-console.log(creditCardValidator("6666666666661666"));
-console.log(creditCardValidator("9999777788880000"));
