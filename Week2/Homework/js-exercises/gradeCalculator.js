@@ -32,7 +32,7 @@ function gradeCalculator(grade) {
   } else {
     return "You have entered an incorrect value. Please enter a number between 0 and 100";
   } //eror message if number is not 0-100
-  return `You got a ${letterGrade} ${grade}%!` 
+  return `You got a ${letterGrade} ${grade}%!`;
 }
 
 //calling a function
@@ -42,3 +42,28 @@ gradeCalculator(10);
 //console log to  check if function is working
 console.log(gradeCalculator(60)); // got got D
 console.log(gradeCalculator(588)); //inccorect value message
+console.log(gradeCalculator(-50)); //inccorect value message
+
+/*
+Simplified function, needs to be updated to not allow negative values
+
+function gradeCalculator(grade) {
+  if (grade < 50) {
+    letterGrade = "F";
+  } else if (grade < 60) {
+    letterGrade = "E";
+  } else if (grade < 70) {
+    letterGrade = "D";
+  } else if (grade < 80) {
+    letterGrade = "C";
+  } else if (grade < 90) {
+    letterGrade = "B";
+  } else if (grade <= 100) {
+    letterGrade = "A";
+  } else {
+    return "You have entered an incorrect value. Please enter a number between 0 and 100";
+  } //eror message if number is not 0-100
+  return `You got a ${letterGrade} ${grade}%!`;
+}
+
+*/
