@@ -30,13 +30,11 @@ for (let i = 0; i < booksList.length; i++) {
 
 for (let book of booksList) {
   console.log(book.Title + " by " + book.Author);
-}
-//Create a conditional statement to change the log depending on whether you read it yet or not.If you read it, log a string like You already read "The Hobbit" right after the log of the book detail
-//If you haven't read it log a string like You still need to read "The Lord of the Rings"
-for (let book of booksList) {
   if (book.alreadyRead === true) {
     console.log("You already read " + book.Title);
   } else {
     console.log("You still need to read " + book.Title);
   }
 }
+//Create a conditional statement to change the log depending on whether you read it yet or not.If you read it, log a string like You already read "The Hobbit" right after the log of the book detail
+//If you haven't read it log a string like You still need to read "The Lord of the Rings"
