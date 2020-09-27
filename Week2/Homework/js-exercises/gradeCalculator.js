@@ -17,38 +17,9 @@ let grade = "";
 
 //assigning letters which will be printed out once equivalent numbers in range are entered
 function gradeCalculator(grade) {
-  if (grade >= 0 && grade <= 49) {
-    letterGrade = "F";
-  } else if (grade >= 50 && grade <= 59) {
-    letterGrade = "E";
-  } else if (grade >= 60 && grade <= 69) {
-    letterGrade = "D";
-  } else if (grade >= 70 && grade <= 79) {
-    letterGrade = "C";
-  } else if (grade >= 80 && grade <= 89) {
-    letterGrade = "B";
-  } else if (grade >= 90 && grade <= 100) {
-    letterGrade = "A";
-  } else {
+  if (grade < 0 || grade > 100) {
     return "You have entered an incorrect value. Please enter a number between 0 and 100";
-  } //eror message if number is not 0-100
-  return `You got a ${letterGrade} ${grade}%!`;
-}
-
-//calling a function
-gradeCalculator(60);
-gradeCalculator(10);
-
-//console log to  check if function is working
-console.log(gradeCalculator(60)); // got got D
-console.log(gradeCalculator(588)); //inccorect value message
-console.log(gradeCalculator(-50)); //inccorect value message
-
-/*
-Simplified function, needs to be updated to not allow negative values
-
-function gradeCalculator(grade) {
-  if (grade < 50) {
+  } else if (grade < 50) {
     letterGrade = "F";
   } else if (grade < 60) {
     letterGrade = "E";
@@ -60,10 +31,15 @@ function gradeCalculator(grade) {
     letterGrade = "B";
   } else if (grade <= 100) {
     letterGrade = "A";
-  } else {
-    return "You have entered an incorrect value. Please enter a number between 0 and 100";
-  } //eror message if number is not 0-100
+  }
   return `You got a ${letterGrade} ${grade}%!`;
 }
 
-*/
+//calling a function
+gradeCalculator(60);
+gradeCalculator(10);
+
+//console log to  check if function is working
+console.log(gradeCalculator(60)); // got got D
+console.log(gradeCalculator(588)); //inccorect value message
+console.log(gradeCalculator(-50)); //inccorect value message
