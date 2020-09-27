@@ -40,9 +40,8 @@ function differentNumbers(number) {
 //function to add all numbers
 function numbersValue(number) {
   let sum = 0;
-  while (number) {
-    sum += number % 10;
-    number = Math.floor(number / 10);
+  for (let i = 0; i < number.length; i++) {
+    sum += parseInt(number[i]);
   }
   return sum;
 }
@@ -54,3 +53,4 @@ creditCardValidator("6666666666666661");
 creditCardValidator("6666666666661666");
 creditCardValidator("9999777788880000");
 
+console.log(numbersValue("66"));
