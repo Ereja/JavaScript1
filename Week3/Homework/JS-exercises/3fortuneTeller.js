@@ -20,16 +20,23 @@ const jobs = [
   "waitress",
 ];
 
-function tellFortune() {
-  const children = numChildren[Math.floor(Math.random() * numChildren.length)];
-  const partner = partnerName[Math.floor(Math.random() * partnerName.length)];
-  const location = locations[Math.floor(Math.random() * locations.length)];
-  const job = jobs[Math.floor(Math.random() * jobs.length)];
+//function that will randomize items from selected array
+function getRandomItemFromArray(array) {
+  const randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
+}
+
+//function which with help of previous function(getRandomItemFromArray) creates a randomised life scenario and returns it
+function tellFortune(numChildren, partnerName, locations, jobs) {
+  const children = getRandomItemFromArray(numChildren);
+  const partner = getRandomItemFromArray(partnerName);
+  const location = getRandomItemFromArray(locations);
+  const job = getRandomItemFromArray(jobs);
   const lifeRandomizer = `You will be a ${job} in ${location}, married to ${partner} with ${children} kids.`;
   return lifeRandomizer;
 }
 
 //calling the function
-tellFortune();
-tellFortune();
-tellFortune();
+tellFortune(numChildren, partnerName, locations, jobs);
+tellFortune(numChildren, partnerName, locations, jobs);
+tellFortune(numChildren, partnerName, locations, jobs);
