@@ -17,9 +17,20 @@ const cartForParty = {
   cheese: 2.99,
 };
 
+//using in
+// function calculateTotalPrice() {
+//   let total = 0;
+//   for (let price in cartForParty) {
+//     total += cartForParty[price];
+//   }
+//   return `Total: €${total}`;
+// }
+
+//using object keys
+
 function calculateTotalPrice() {
   let total = 0;
-  for (let price in cartForParty) {
+  for (let price of Object.keys(cartForParty)) {
     total += cartForParty[price];
   }
   return `Total: €${total}`;
